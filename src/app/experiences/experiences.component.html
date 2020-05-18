@@ -1,17 +1,17 @@
 <h1>Experiences</h1>
-<div class="container" style="experiences.component.scss">
+<div *ngFor="let experience of experiences" class="container" style="experiences.component.scss">
     <div class="companyRow" >
         <div class="logo" style="float: left">
-            <a href="https://www.capco.com">
-                <img src="../../assets/images/experience5.jpg" height=130 width=150/>
+            <a href={{experience.companySite}}>
+                <img src="../../assets/images/{{experience.logoFileName}}" height=130 width=150/>
             </a>
         </div>
         <div class="description">
             <div class="job">
-                <h2>Capco</h2>
-                <h3>Senior Interface Designer</h3>
-                <h4>2005-2007</h4>
-                <p>Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
+                <h2>{{experience.company}}</h2>
+                <h3>{{experience.title}}</h3>
+                <h4>{{experience.date}}</h4>
+                <p>{{experience.description}} </p>
             </div>
         </div>
     </div>

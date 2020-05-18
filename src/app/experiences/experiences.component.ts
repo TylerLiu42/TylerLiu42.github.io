@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Experience} from "../models/experiences.model";
+import { experiencesData } from "../../app/experiences/experiencesData";
 
 @Component({
   selector: 'app-experiences',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperiencesComponent implements OnInit {
 
+  experiences: Experience[] = experiencesData; 
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(experiencesData[0].logoFileName)
   }
 
 }
