@@ -1,0 +1,20 @@
+h1{
+    margin-left: 35px;
+}
+#container{
+    margin-top: 20px;
+    width: 750px;
+    #companyRow{
+        width: 100%;
+        #logo {
+            float: left;
+        }
+        #description{
+            float: left; 
+            width: 750px;
+        }
+    } 
+}
+.job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
+.job h4 { position: absolute; top: 0.35em; right: 5% }
+.job p { margin: 0.75em 5% 3em 0;}

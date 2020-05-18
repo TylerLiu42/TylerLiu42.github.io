@@ -1,0 +1,18 @@
+<div class="app-intro" id="app-intro" style="intro.component.scss">
+    <div class="salutation" id="salutation"> 
+        <h1>Hi there, I'm Tyler Liu.</h1> 
+        <img id="linkedinpic" src="../../assets/images/linkedinpiccropped.png"/>
+    </div>
+    <div class="aboutMeContent" id="aboutMeContent">
+        <p id="blurb">I'm a 3rd year Computer Engineering student at the University of Waterloo, currently looking for internship opportunities.
+        <br> <br>If you'd like to know more about me, check out my resume and my projects, or get in touch with me directly.</p>
+        <ul *ngFor="let key of skills | keyvalue">
+            <span>{{key.key + ': '}}</span>
+            <span *ngFor="let individualSkills of key.value; let element of key.value; let last = last">
+                <span>
+                    {{individualSkills}}<span *ngIf="!last">,</span>
+                </span> 
+            </span>
+        </ul>
+    </div>
+</div>
