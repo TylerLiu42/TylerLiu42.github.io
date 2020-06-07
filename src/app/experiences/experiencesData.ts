@@ -30,5 +30,16 @@ export const experiencesData: Experience[] = [
                         I also incorporated the chatbot into a React Native app that became the company's MVP.`,
         "logoFileName": "naudix.png",
         "companySite": "https://www.crunchbase.com/organization/naudix"
+    },
+    {
+        "company": "Ontario Ministry of Finance",
+        "title": "Database Programmer",
+        "date": "Sep-Dec 2017",
+        "description": `I wrote Postscript programs to create economic reports, pulling
+        time-series data from a proprietary database called FAME. It was interesting working 
+        with economists, and they made me promise I would take an econ course. I held up
+        my end of the bargain.`,
+        "logoFileName": "MOF.jpg",
+        "companySite": "https://www.ontario.ca/page/ministry-finance"
     }
 ]
