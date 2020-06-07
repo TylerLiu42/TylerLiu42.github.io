@@ -1,11 +1,11 @@
 #app-intro {
     width: 100%;
-    height: 70%;
+    height: 80%;
     display: flex;
     padding-bottom: 30px;
     background-color: #638bd6;
     #salutation{
-        width: 35%;
+        width: 37%;
         font-size: 1.1em;
         font-family:'Helvetica', 'Arial', 'Sans-Serif';
         color: #000000;
@@ -18,15 +18,17 @@
             color: #000000;
         }
         #skills{
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: #000000;
+            padding: 0;
         }
+        
         color: #000000;
         padding-top: 100px;
         margin-right: 50px;
     }
     img{
-        height: 340px;
+        height: 385px;
         width: 280px;
         margin-top: 40px;
         border-radius:10%;
