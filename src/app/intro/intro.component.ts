@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroComponent implements OnInit {
 
-  skillsBlurbArr: string[] = this.getSkills()
+  listOfSkills: string[]
   skills = {
     "Languages": ["Java", "C++", "JavaScript", "TypeScript", "Groovy", "Python"],
     "Technologies": ["Node.js", "Angular.js", "Spring Boot", "React Native", "JUnit/AssertJ"],
@@ -17,24 +17,20 @@ export class IntroComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.listOfSkills = this.getSkills()
   }
 
   getSkills() {
-    let skills = {
-      "Languages": ["Java", "C++", "Groovy"],
-      "Technologies": ["Node.js", "Angular.js", "Spring Boot"],
-      "Databases": ["MySQL", "Oracle", "MongoDB"]
-    }
-    let skillsBlurb = "";
-    let skillsBlurbArr = [];
-    for (let category in skills) {
-      skillsBlurb = category + ": "
-      for (let i = 0; i < skills[category].length; i++) {
-        skillsBlurb += skills[category][i] + 
-          (i == skills[category].length-1 ? "" : ", ")
+    let categorySkills = "";
+    let categorySkillsList = [];
+    for (let category in this.skills) {
+      categorySkills = category + ": "
+      for (let i = 0; i < this.skills[category].length; i++) {
+        categorySkills += this.skills[category][i] + 
+          (i == this.skills[category].length-1 ? "" : ", ")
       }
-      skillsBlurbArr.push(skillsBlurb)
+      categorySkillsList.push(categorySkills)
     } 
-    return skillsBlurbArr
+    return categorySkillsList
   }
 }

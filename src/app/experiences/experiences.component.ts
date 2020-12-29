@@ -14,7 +14,7 @@ export class ExperiencesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(experiencesData[0].logoFileName)
+    
   }
 
 }

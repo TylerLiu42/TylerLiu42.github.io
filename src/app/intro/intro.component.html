@@ -4,16 +4,11 @@
         <img id="linkedinpic" src="../../assets/images/linkedinpiccropped.png"/>
     </div>
     <div class="aboutMeContent" id="aboutMeContent">
-        <p id="blurb">I'm a 4th year Computer Engineering student at the University of Waterloo, currently looking for internship opportunities.
+        <p id="blurb">I'm a 4th year Computer Engineering student at the University of Waterloo, currently looking for 2021 new grad Software Engineer opportunities.
         <br> <br>I am passionate about backend development and software architectures, with a track record of ramping up quickly with new technologies. 
         If you want to connect with me, feel free to reach out via email or LinkedIn.</p>
-        <ul id="skills" *ngFor="let key of skills | keyvalue">
-            <span>{{key.key + ': '}}</span>
-            <span *ngFor="let individualSkills of key.value; let element of key.value; let last = last">
-                <span>
-                    {{individualSkills}}<span *ngIf="!last">,</span>
-                </span> 
-            </span>
+        <ul id="skills" *ngFor="let skill of listOfSkills">
+            <span>{{skill}}</span>
         </ul>
     </div>
 </div>
